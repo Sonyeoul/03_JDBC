@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="selectEmpByName">
+        SELECT
+        E.EMP_ID,
+        E.EMP_NAME,
+        J.JOB_NAME
+        FROM EMPLOYEE E
+        JION JOB J ON E.JOB_CODE = J.JOB_CODE
+        WHERE E.EMP_NAME LIKE CONCAT(?,'%')
+
+    </entry>
+
+</properties>
